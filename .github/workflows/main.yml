@@ -28,7 +28,7 @@ jobs:
       run: |
         ./build config                   \
                 model=${{ matrix.model}} \
-                name="Aurora_kernel_3.4_perfor"        \
+                name="S10_5G_PERFORMANCE_ByVaLueS"        \
                 +magisk+canary           \
                 +tcp_bbr                 \
                 +sched_performance       \
