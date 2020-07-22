@@ -28,9 +28,10 @@ jobs:
       run: |
         ./build config                   \
                 model=${{ matrix.model}} \
-                name="S10_5G_Perfor_WC_ByVaLueS"        \
+                name="Recording"         \
                 +magisk                  \
                 +tcp_bbr                 \
+                +300hz                   \
                 +sched_performance       \
                 +nohardening             \
                 +ttl                     \
