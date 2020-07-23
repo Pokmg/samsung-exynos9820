@@ -31,7 +31,7 @@ jobs:
                 name="Recording"         \
                 +magisk+canary           \
                 +tcp_bbr                 \
-                +300hz                   \
+                +1000hz                   \
                 +sched_performance       \
                 +nohardening             \
                 +ttl                     \
