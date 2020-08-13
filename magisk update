@@ -28,7 +28,7 @@ jobs:
       run: |
         ./build config                   \
                 model=${{ matrix.model}} \
-                name="Recording"         \
+                name="Kernel Of VaLueS"  \
                 +magisk+canary           \
                 +io_anxiety              \
                 +tcp_bbr                 \
@@ -44,6 +44,7 @@ jobs:
                 +ntfs                    \
                 +morosound               \
                 +boeffla_wl_blocker      \
+                +nodebug                 \
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
