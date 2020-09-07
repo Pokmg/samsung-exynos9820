@@ -45,6 +45,7 @@ jobs:
                 +morosound               \
                 +boeffla_wl_blocker      \
                 +nodebug                 \
+                +os_patch_level="2099-12-1"\
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
