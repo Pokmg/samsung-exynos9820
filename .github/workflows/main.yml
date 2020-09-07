@@ -30,7 +30,7 @@ jobs:
                 model=${{ matrix.model}} \
                 name="Kernel-Of-VaLueS"  \
                 os_patch_level=2099-01   \
-                +magisk=canary           \
+                +magisk                  \
                 +io_maple                \
                 +tcp_bbr                 \
                 +tcp_cubic               \
@@ -38,13 +38,12 @@ jobs:
                 +sched_performance       \
                 +nohardening             \
                 +ttl                     \
-                +wireguard               \
                 +cifs                    \
                 +sdfat                   \
                 +ntfs                    \
                 +morosound               \
-                +boeffla_wl_blocker      \
                 +nodebug                 \
+                +noatime                 \
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
