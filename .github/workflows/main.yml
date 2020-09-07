@@ -30,20 +30,20 @@ jobs:
                 model=${{ matrix.model}} \
                 name="Kernel-Of-VaLueS"  \
                 os_patch_level=2099-01   \
-                +magisk                  \
-                +io_maple                \
-                +tcp_bbr                 \
-                +tcp_cubic               \
-                +tcp_westwood            \
-                +sched_performance       \
-                +nohardening             \
-                +ttl                     \
-                +cifs                    \
-                +sdfat                   \
-                +ntfs                    \
-                +morosound               \
-                +nodebug                 \
-                +noatime                 \
+                  +noatime               \
+                  +nohardening           \
+                  +magisk                \
+                  +sdfat                 \
+                  -ttl                   \
+                  -wireguard             \
+                  -cifs                  \
+                  -ntfs                  \
+                  -morosound             \
+                  -boeffla_wl_blocker    \
+                  -size                  \
+                  -nodebug               \
+                  -noksm                 \
+                  -usb_serial            \
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
