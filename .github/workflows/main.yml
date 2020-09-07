@@ -29,7 +29,7 @@ jobs:
         ./build config                   \
                 model=${{ matrix.model}} \
                 name="Kernel-Of-VaLueS"  \
-                +magisk                  \
+                +magisk=canary           \
                 +io_maple                \
                 +tcp_bbr                 \
                 +tcp_cubic               \
