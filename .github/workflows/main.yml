@@ -36,7 +36,7 @@ jobs:
                 +tcp_cubic               \
                 +tcp_westwood            \
                 +1000hz                  \
-                +sched_performance       \
+                +sched_conservative      \
                 +nohardening             \
                 +ttl                     \
                 +wireguard               \
